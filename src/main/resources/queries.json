@@ -1,0 +1,60 @@
+GET /_aliases
+
+GET /indices
+
+GET _search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+GET /cpfs30122020034616/_search
+
+GET /cpfs30122020034616/_doc/DkZlsnYBWDzTLIScsr8s
+
+GET /cpfs30122020020456/_search
+
+GET /_alias
+
+GET /loja_alias
+
+GET /lojaindex29122020230444
+
+GET /carros3
+
+GET /carros3/_search
+
+PUT /carro4
+{
+  "settings":{
+    "number_of_shards": 3,
+    "number_of_replicas": 2
+  },
+  "mappings": {
+    "properties": {
+      "nome":{"type": "text"},
+      "marca":{"type": "text"},
+      "modelo":{"type": "text"},
+      "anom":{"type": "integer"},
+      "anof":{"type": "integer"},
+      "valor":{"type": "double"}
+    }
+  }
+}
+
+POST /carro/_doc
+{
+  "nome":"UP",
+  "marca":"Fiat",
+  "modelo":"UP",
+  "anom":2021,
+  "anof":2020,
+  "valor":53000.10
+}
+
+GET /carro/_doc/AqIRonYB8amDeIxFrF-s
+
+
+
+
